@@ -1,4 +1,9 @@
 
+
+// Creating Objects of Objects
+
+const contactInfo = []
+
 // Creating Objects for Contact Information
 
 const emailAddress = {
@@ -21,14 +26,9 @@ const faceBook = {
     "name": "https://www.facebook.com/ryan.mcpherson.142"
 }
 
-// Creating Objects of Objects
+// Pushing objects into array
 
-const contactInfo = {
-    "emailAddress": emailAddress,
-    "phoneNumber": phoneNumber,
-    "linkedIn": linkedIn,
-    "faceBook": faceBook
-}
+contactInfo.push(emailAddress, phoneNumber, linkedIn,faceBook)
 
 // Parsing and Storing the Data
 

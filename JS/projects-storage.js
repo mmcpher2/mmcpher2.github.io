@@ -1,4 +1,8 @@
 
+// Creating array of Objects
+
+const projects = []
+
 // Creating Database Objects for Projects
 
 const projectOne = {
@@ -16,14 +20,15 @@ const projectThree = {
     "link": "https://github.com/mmcpher2/homeInventory"
 }
 
-// Creating Objects of Objects
-
-const projects = {
-    "projectOne": projectOne,
-    "projectTwo": projectTwo,
-    "projectThree": projectThree
+const projectFour = {
+    "title": "CSS-Selectors",
+    "link": "https://github.com/mmcpher2/css-selectors"
 }
- 
+
+// pushing ojects into array
+
+projects.push(projectOne, projectTwo, projectThree, projectFour)
+
 // Parsing and Storing the Data
 
 const projectsString = JSON.stringify(projects)
