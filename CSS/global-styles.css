@@ -3,6 +3,8 @@
 
 .article {
     color: darkblue;
+    padding: inherit;
+    margin-top: auto;
 }
 
 #intro {
@@ -14,7 +16,7 @@
 }
 
 h2,
-h3,
+h3, 
 ul,
 ol {
     color: darkblue;
@@ -22,9 +24,8 @@ ol {
 
 /* Navigation Bar */
 
-/* Add a gray background color to the top navigation */
 .topnav {
-    background-color: tomato;
+    background-color: rgba(0,0,0,.5);
     overflow: hidden;
 }
 
@@ -39,6 +40,11 @@ ol {
     font-size: 17px;
 }
 
+.navOptions {
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* Change the color of links on hover */
 .topnav a:hover {
     background-color: lightblue;
@@ -49,4 +55,6 @@ ol {
 .topnav .icon {
     display: none;
 }
+
+/* Footer Nav  */
 
