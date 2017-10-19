@@ -1,6 +1,10 @@
 
 /* This is styling */
 
+body {
+    background-color: hsl(115, 100%, 96%);
+}
+
 .article {
     color: darkblue;
     padding: inherit;
@@ -25,8 +29,9 @@ ol {
 /* Navigation Bar */
 
 .topnav {
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(76, 175, 80, 0.3);
     overflow: hidden;
+    box-shadow: 0 8px 6px -6px black;
 }
 
 /* Style the links inside the navigation bar */
@@ -35,9 +40,9 @@ ol {
     display: block;
     color: darkblue;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 20px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.5em;
 }
 
 .navOptions {
