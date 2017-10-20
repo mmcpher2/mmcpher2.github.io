@@ -13,28 +13,44 @@
     </head>
 
     <body>
-        <div class="topnav" id="myTopnav">
-            <a href="../index.html">Home</a>
-            <div class="navOptions">
-                <a href="/HTML/contact.html">Contact</a>
-                <a href="/HTML/projects.html">Projects</a>
-                <a href="/HTML/blog.html">Blog</a>
-                <a href="/HTML/resume.html">Resume</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-            </div>
-        </div>
-
-        <h2>It's Blog Time!</h2>
+        <div id="container">
+            <div id="header">
+                <div class="topnav" id="myTopnav">
+                    <a href="../index.html">Home</a>
+                    <div class="navOptions">
+                        <a href="/HTML/contact.html">Contact</a>
+                        <a href="/HTML/projects.html">Projects</a>
+                        <a href="/HTML/blog.html">Blog</a>
+                        <a href="/HTML/resume.html">Resume</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                    </div>
+                </div>
+            </div>    
             
-            <div class="blogBox" id="myBlogs"> 
-                <article id="blogDisplayer">
-                </article>
+            <div id="body">
+                <h2>It's Blog Time!</h2>
+                    
+                    <div class="blogBox" id="myBlogs"> 
+                        <article id="blogDisplayer">
+                        </article>
+                    </div>
+
+                    <div id="blogPaginator">
+                    </div>
             </div>
 
-        <footer id="blogPaginator">
-        </footer>
+            <div id="footer">
+                <footer>
+                    <div class="footerNav">
+                        <address class="address">
+                                Written by <a href="mailto:mmcpher2@gmail.com">Ryan McPherson</a><br> 2709 Linmar Ave.  Nashville, TN.  37215   USA
+                        </address>
+                    </div>
+                </footer>
+            </div>
 
-        <script src="../JS/blog-factory.js"></script>
-        <script src="../JS/blog-pagination.js"></script>
+            <script src="../JS/blog-factory.js"></script>
+            <script src="../JS/blog-pagination.js"></script>
+        </div>
     </body>
 </html>
