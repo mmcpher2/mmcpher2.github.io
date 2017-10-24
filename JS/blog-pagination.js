@@ -1,7 +1,7 @@
 
-
+{
 const totalItems = storedBlogs.length
-const itemsPerPage = 1
+const itemsPerPage = 5
 const numberOfPages = Math.ceil(totalItems / itemsPerPage)
 const paginationEl = document.getElementById("blogPaginator")
 const blogEl = document.getElementById("blogDisplayer")
@@ -41,17 +41,17 @@ function produceBlogs (event) {
 
     // Change the class name of the previous arrow
     if ((pageNumber - 1) === 0) {
-        previousEl.style.display = "none"
+        previousEl.style.visibility = "hidden"
     } else {
-        previousEl.style.display = "inline"
+        previousEl.style.visibility = "visible"
         previousEl.className = `page-${pageNumber - 1}`
     }
 
     // Change the class name of the next arrow
     if ((pageNumber + 1) > numberOfPages) {
-        nextEl.style.display = "none"
+        nextEl.style.visibility = "hidden"
     } else {
-        nextEl.style.display = "inline"
+        nextEl.style.visibility = "visible"
         nextEl.className = `page-${pageNumber + 1}`
     }
 
@@ -65,7 +65,7 @@ function produceBlogs (event) {
     for (let i = 0; i < itemsToDisplay.length; i++) {
         let currentBlog = itemsToDisplay[i];
         blogEl.innerHTML += `
-        <section class="${currentBlog.Title}">
+        <section class="boxy" class="${currentBlog.Title}">
         <h2>"${currentBlog.Title}"</h1>
         <h4>${currentBlog.Week}</h4>
         <h4>${currentBlog.Post}</h4>
@@ -80,7 +80,7 @@ const blogLinks = document.getElementsByClassName("blogPage")
 // Add event listeners to each <a> element in the pagination
 for (let j = 0; j < blogLinks.length; j++) {
     let thisblogEl = blogLinks[j];
-    thisblogEl.addEventListener("click", produceBlogs, false);
+    thisblogEl.addEventListener("click", produceBlogs);
 }
 
 produceBlogs({
@@ -91,3 +91,4 @@ produceBlogs({
 
 previousEl.addEventListener("click", produceBlogs)
 nextEl.addEventListener("click", produceBlogs)
+}

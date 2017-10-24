@@ -23,10 +23,45 @@ const weekThree = {
     "Title": "Group Project after Group Project...",
     "Post": "After a week and a half of working through individual exercises and small personal projects, we were all thrown into groups of 4 or 5 to start our first group project on Wednesday. My first team was called the Jagged Ferrets, which is why we called our business Hobbs & Jills (The male and female ferret).  During this group project we styled first with a static header and footer, and then each person spent time working on their individual content within each page. No GIT problems, and a relatively smooth two days.  We had just wrapped up our first demo on Friday at noon when Steve threw us back into random groups to be finished by Wednesday morning.  This team was galled the Jackals's, also a great group.  Although our team meshed well, we were tasked by Steve to work on the data first, then structure, then styling... this caused some issues due the fact none of us really unserstand what a database should really look like, while styling is pretty understandable.  On top of this, with 4 hours to go on Tuesday, Steve told us to add a pagination bar at the bottom of our product page. AS WELL AS add 15 additional products.  We finished it with many bumps and bruises thanks to GIT and GitHub challended (Merge conflicts galore), but I think that I learned a lot, but don't necessarily feel like it after looking at the work of some other groups.  ALL GOOD, DON'T PANIC!",
 }
+const weekFour = {
+    "Week": "Week: 4",
+    "Title": "Coming Soon",
+    "Post": "Coming Soon",
+}
+const weekFive = {
+    "Week": "Week: 5",
+    "Title": "Coming Soon",
+    "Post": "Coming Soon",
+}
+const weekSix = {
+    "Week": "Week: 6",
+    "Title": "Coming Soon",
+    "Post": "Coming Soon",
+}
+const weekSeven = {
+    "Week": "Week: 7",
+    "Title": "Coming Soon",
+    "Post": "Coming Soon",
+}
+const weekEight = {
+    "Week": "Week: 8",
+    "Title": "Coming Soon",
+    "Post": "Coming Soon",
+}
+const weekNine = {
+    "Week": "Week: 9",
+    "Title": "Coming Soon",
+    "Post": "Coming Soon",
+}
+const weekTen = {
+    "Week": "Week: 10",
+    "Title": "Coming Soon",
+    "Post": "Coming Soon",
+}
 
 // Pushing objects into array
 
-blogs.push(weekOne, weekTwo, weekThree)
+blogs.push(weekOne, weekTwo, weekThree, weekFour, weekFive, weekSix, weekSeven, weekEight, weekNine, weekTen)
 
 //Created a constant variable holding the stringified array
 

@@ -11,19 +11,18 @@
     color: darkblue;
 }
 
-
-.blogBox {
-    margin: 3%;
-    padding: 5%;
-    background: rgba(76, 175, 80, 0.3);
-    border-radius: 5px;
-    box-shadow: 0 8px 6px -6px black;
-}
-
 .blogBox h4 {
     padding-top: 20px;
 }
 
 .blogBox #blogDisplayer {
     color: darkblue;
+}
+
+.boxy {
+    margin: 3%;
+    padding: 5%;
+    background: rgba(76, 175, 80, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 8px 6px -6px black;
 }
