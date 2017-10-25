@@ -25,8 +25,8 @@ const weekThree = {
 }
 const weekFour = {
     "Week": "Week: 4",
-    "Title": "Coming Soon",
-    "Post": "Coming Soon",
+    "Title": "Ignore the Noise",
+    "Post": "One thing that I new coming in here was that my classmates would come with varying levels of experience and knowledge.  One thing that I have found difficult to ignore is when questions are asked during classroom live coding... I have no questions to ask, yet, it seems, that many others in the class have PLENTY to say and question.  I still firmly believe that not everyone is built that way, myself in particular, and that I would rather come up with questions and answers as I work on projects and excersized myself.  Not complaining, just acknowledging!",
 }
 const weekFive = {
     "Week": "Week: 5",
