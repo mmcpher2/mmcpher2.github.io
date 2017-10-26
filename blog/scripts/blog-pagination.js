@@ -1,6 +1,11 @@
 
+
+
 {
-const totalItems = storedBlogs.length
+// Had to pull string back out of local storage before paginating
+const storedBlogs = JSON.parse(localStorage.getItem("blogArchiveString"))
+
+const totalItems = storedBlogs.articles.length
 const itemsPerPage = 5
 const numberOfPages = Math.ceil(totalItems / itemsPerPage)
 const paginationEl = document.getElementById("blogPaginator")
@@ -56,7 +61,7 @@ function produceBlogs (event) {
     }
 
     // Determine which items to display by slicing the array
-    const itemsToDisplay = storedBlogs.slice(
+    const itemsToDisplay = storedBlogs.articles.slice(
         (pageNumber - 1) * itemsPerPage, 
         pageNumber * itemsPerPage
     )
@@ -65,10 +70,10 @@ function produceBlogs (event) {
     for (let i = 0; i < itemsToDisplay.length; i++) {
         let currentBlog = itemsToDisplay[i];
         blogEl.innerHTML += `
-        <section class="boxy" class="${currentBlog.Title}">
-        <h2>"${currentBlog.Title}"</h1>
-        <h4>${currentBlog.Week}</h4>
-        <h4>${currentBlog.Post}</h4>
+        <section class="boxy ${currentBlog.title}">
+        <h3>"${currentBlog.title}"</h3>
+        <h4>Post: ${currentBlog.id}</h4>
+        <h5>${currentBlog.body}</h5>
         </section>
         `
     }

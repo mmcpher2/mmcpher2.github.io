@@ -26,3 +26,12 @@
     border-radius: 5px;
     box-shadow: 0 8px 6px -6px black;
 }
+
+.boxy img {
+    display: table-column;
+    margin-top: 20px;
+    max-height: 300px;
+    max-width: 450px;
+    height: auto;
+    width: auto;
+}
