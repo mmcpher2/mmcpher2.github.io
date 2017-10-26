@@ -1,0 +1,19 @@
+
+.articleForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.articleForm__title,
+.articleForm__body {
+    margin: 10px 0px;
+
+}
+
+#articleForm {
+    margin: 3%;
+    padding: 5%;
+    background: rgba(76, 175, 80, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 8px 6px -6px black;
+}

@@ -1,0 +1,62 @@
+
+
+<html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+      <title>Blog Post Generator</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      <link rel="stylesheet" href="../styles/global-styles.css">
+      <link rel="stylesheet" href="styles/blog-form.css">
+    </head>
+    
+    <body>
+      <div id="container">
+         <div id="header">
+            <div class="topnav" id="myTopnav">
+                <a href="../index.html">Home</a>
+                <div class="navOptions">
+                    <a href="/contact/index.html">Contact</a>
+                    <a href="/projects/index.html">Projects</a>
+                    <a href="/blog/index.html">Blog</a>
+                    <a href="/resume/index.html">Resume</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                </div>        
+            </div>
+         </div>
+        
+        <header>
+            <h2>Create Blog Post</h2>
+        </header>
+      
+        <section id="articleForm" class="articleForm">
+            <div class="articleForm__title">
+                <label>Title of Post</label>
+                <input type="text" name="articleForm__title">
+            </div>
+            
+            <div class="articleForm__body">
+                <label>Body</label>
+                <textarea name="articleForm__body"></textarea>
+            </div>
+            
+            <div id="articleForm__save">
+                <button id="articleForm__saveButton">Save Blog Post</button>
+            </div>
+        </section>
+        
+        <div id="footer">
+                <footer>
+                    <div class="footerNav">
+                        <address class="address">
+                                Written by <a href="mailto:mmcpher2@gmail.com">Ryan McPherson</a><br> 2709 Linmar Ave.  Nashville, TN.  37215   USA
+                        </address>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+      <script src="scripts/blog-controller.js"></script>
+    </body>
+</html>
