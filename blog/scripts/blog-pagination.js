@@ -1,15 +1,36 @@
 
 
 
-{
+
 // Had to pull string back out of local storage before paginating
 const storedBlogs = JSON.parse(localStorage.getItem("blogArchiveString"))
 
-const totalItems = storedBlogs.articles.length
-const itemsPerPage = 5
-const numberOfPages = Math.ceil(totalItems / itemsPerPage)
-const paginationEl = document.getElementById("blogPaginator")
-const blogEl = document.getElementById("blogDisplayer")
+const paginator = (items, paginationElClass, outputElClass) => {
+    // To determine how many item's per page
+    const totalItems = storedBlogs.articles.length
+    const itemsPerPage = 5
+    const numberOfPages = Math.ceil(totalItems / itemsPerPage)
+    // Where to add the paginator in the DOM
+    const paginationEl = document.getElementById("blogPaginator")
+    const blogEl = document.getElementById("blogDisplayer")
+
+}
+
+// Adding event listener to begin filtering through current blog posts in storage 
+// and posts based on search criteria in "blogFilter"
+document.getElementById("blogFilter").addEventListener(
+    "keyup", event => {
+        if (event.target.value.length >= 3) {
+            
+            // Take what user types and lowercase to compare to current blog posts
+            const userInputString = event.target.value.toLowercase()
+            const filteredBlogs = storedBlogs.articles.filter(blogs => {
+                return article.title.toLowercase().includes(userInputString) ||
+                article.body.toLowercase().includes(userInputString)
+            })
+        }
+        
+
 
 // Build the DOM string for the pagination links in the footer
 let paginationString = "<ul class='paginatorBar'>"
@@ -85,7 +106,7 @@ const blogLinks = document.getElementsByClassName("blogPage")
 // Add event listeners to each <a> element in the pagination
 for (let j = 0; j < blogLinks.length; j++) {
     let thisblogEl = blogLinks[j];
-    thisblogEl.addEventListener("click", produceBlogs);
+    thisblogEl.addEventListener("click", produceBlogs)
 }
 
 produceBlogs({

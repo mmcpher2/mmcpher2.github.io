@@ -24,7 +24,7 @@
     const articleUUIDGen = idGenerator(lastId.id)
 
     // Factory function for new articles
-    const newArticleFactory = function (title, body) {
+    const newArticleFactory = (title, body, id) => {
         return Object.create(null, {
             "id": {
                 value: articleUUIDGen.next().value,
@@ -42,7 +42,11 @@
     }
 
     // Add click event listener to the save button
-    const saveButtonEl = document.getElementById("articleForm__saveButton").addEventListener("click", event => {
+    const saveButtonEl = document.getElementById("articleForm__saveButton")
+
+            saveButtonEl.addEventListener("click", event => {
+
+            // TO-DO: Pop up "Article Saved!" to let user know.
 
             // Create a new article object
             const newArticle = newArticleFactory(
@@ -56,8 +60,19 @@
             // Sort the articles by their `id` property, descending
             storedBlogs.articles.sort((p, n) => n.id - p.id)
             
-            // Serialize and store database
+            // Serialize (taking something in memory and making it transportable) and store database
             localStorage.setItem("blogArchiveString", JSON.stringify(storedBlogs))
+
+            // Calling to reset text boxes
+            textBoxReset()
         })
 }
+
+            // Reset form after save button is clicked
+            function textBoxReset () {
+                document.forms["articleForm"].reset()}
+
+            
+            
+
 
