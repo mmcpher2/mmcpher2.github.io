@@ -71,8 +71,3 @@
             // Reset form after save button is clicked
             function textBoxReset () {
                 document.forms["articleForm"].reset()}
-
-            
-            
-
-
