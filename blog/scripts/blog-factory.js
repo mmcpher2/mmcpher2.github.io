@@ -37,20 +37,20 @@
 // {
 //     "id": "6",    
 //     "week": "week: 6",
-//     "title": "Coming Soon",
-//     "body": "Coming Soon",
+//     "title": "Bleepin' Heap-Scope",
+//     "body": "It took 4 days (including the weekend) for me to stare at, read, reread, talk about, and eventually ask for a guided walk-through of the Heap-Scope excercise. It was the first time that I've felt completely defeated all the way through an excercise. I finally got it working after a 4 hour session with Chris Miller, who's incredible at this stuff, but I'm really hoping that everything that flowed through my brain stuck, or at least some of it...",
 // },
 // {
 //     "id": "7",    
 //     "week": "week: 7",
-//     "title": "Coming Soon",
-//     "body": "Coming Soon",
+//     "title": "I still don't know what I don't know.",
+//     "body": "Although most everything isn't quite as intimidating to stare at, I'm feeling like there is more and more that I don't know than what I do... If that makes any sense. When asked, "any questions?", it's hard to even formulate a question, because there's nothing to base one off of... Very frustrating.",
 // },
 // {
 //     "id": "8",    
 //     "week": "week: 8",
-//     "title": "Coming Soon",
-//     "body": "Coming Soon",
+//     "title": "Clearing blog post field",
+//     "body": "Greg mentioned that there was a way to clear the blog post entry field once the "save" button was clicked to add it to the Blogs page. I've added the code he mentioned should make this work, and I'm testing it now. I'll let you know how it goes in my next post!",
 // },
 // {
 //     "id": "9",    

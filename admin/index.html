@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
       <link rel="stylesheet" href="../styles/global-styles.css">
       <link rel="stylesheet" href="styles/blog-form.css">
+      <link rel="stylesheet" href="../blog/styles/blog-styles.css" >
     </head>
     
     <body>
@@ -26,11 +27,11 @@
             </div>
          </div>
         
-        <header>
-            <h2>Create Blog Post</h2>
-        </header>
-      
-        <section id="articleForm" class="articleForm">
+        <header><h2>Create Blog Post</h2></header>
+
+        Search Blogs: <input type="text" name="blogFilter"></input>
+
+        <form id="articleForm" class="articleForm" name="articleForm">
             <div class="articleForm__title">
                 <label>Title of Post</label>
                 <input type="text" name="articleForm__title">
@@ -40,11 +41,21 @@
                 <label>Body</label>
                 <textarea name="articleForm__body"></textarea>
             </div>
-            
-            <div id="articleForm__save">
-                <button id="articleForm__saveButton">Save Blog Post</button>
+        </form>
+
+        <div id="articleForm__save">
+            <button id="articleForm__saveButton">Save Blog Post</button>
+        </div>
+
+        <div id="body">
+            <div class="blogBox" id="myBlogs"> 
+                <article id="blogDisplayer">
+                </article>
             </div>
-        </section>
+
+            <div id="blogPaginator">
+            </div>
+        </div>
         
         <div id="footer">
                 <footer>
@@ -56,7 +67,8 @@
                 </footer>
             </div>
         </div>
-
-      <script src="scripts/blog-controller.js"></script>
+        
+        <script src="scripts/blog-controller.js"></script>
+        <script src="../blog/scripts/blog-pagination.js"></script>      
     </body>
 </html>
