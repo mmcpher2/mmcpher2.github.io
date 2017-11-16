@@ -17,6 +17,14 @@ module.exports = function(grunt) {
             eslint: {
                   all: ['blog/scripts.js','contact/scripts.js','resume/scripts.js','admin/scripts.js','projects/scripts.js']
                 },
+            // browserify: {
+            //     dist: {
+            //         files: 
+            //             {
+            //             'build/module.js': ['build/*.js']
+            //             },
+            //         }
+            //     },
             uglify: {
                 options: {
                     banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
@@ -67,6 +75,9 @@ module.exports = function(grunt) {
         
         // Load the ESLint task.
         grunt.loadNpmTasks('eslint-grunt');
+
+        // Load the Browserify
+        // grunt.loadNpmTasks('grunt-browserify');
     
         // Default task(s).
         grunt.registerTask('default', ['uglify', 'watch', 'eslint']);
