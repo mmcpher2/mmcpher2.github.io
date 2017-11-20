@@ -1,0 +1,134 @@
+
+{    "home": [
+        {   
+            "title": "My Story",
+            "information": "Over the past 4 years, I have been working in software sales for a company located in Nashille, TN called HealthStream.  While working there, I realized that my interest in software moved beyond just selling the appications, and I determined it was time to make a pivot and learn the development side of software.  Part of my interest in development was also stirred up by my more artistic, creative side.  I have always wanted to do something that will allow me to utilize both my creative side, needing to create things, and my business/sales experience."
+        }
+    ],
+    "blogs": [
+        {
+            "id": "1",
+            "week": "week: 1",
+            "title": "I don't know what I don't know",
+            "body": "They still don't know that I have no idea what I'm doing. More updates to come..."
+        },
+        {
+            "id": "2",
+            "week": "week: 2",
+            "title": "Learned a local storage thing!",
+            "body": "I think that I'm starting to understand some of this stuff.  For instance, I am writing this blog body from a JS file instead of hard coding it into the HTML file! Pretty neat stuff."
+        },
+        {
+            "id": "3",
+            "week": "week: 3",
+            "title": "Group Project after Group Project...",
+            "body": "After a week and a half of working through individual exercises and small personal projects, we were all thrown into groups of 4 or 5 to start our first group project on Wednesday. My first team was called the Jagged Ferrets, which is why we called our business Hobbs & Jills (The male and female ferret).  During this group project we styled first with a static header and footer, and then each person spent time working on their individual content within each page. No GIT problems, and a relatively smooth two days.  We had just wrapped up our first demo on Friday at noon when Steve threw us back into random groups to be finished by Wednesday morning.  This team was galled the Jackals's, also a great group.  Although our team meshed well, we were tasked by Steve to work on the data first, then structure, then styling... this caused some issues due the fact none of us really unserstand what a database should really look like, while styling is pretty understandable.  On top of this, with 4 hours to go on Tuesday, Steve told us to add a pagination bar at the bottom of our product page. AS WELL AS add 15 additional products.  We finished it with many bumps and bruises thanks to GIT and GitHub challended (Merge conflicts galore), but I think that I learned a lot, but don't necessarily feel like it after looking at the work of some other groups.  ALL GOOD, DON'T PANIC!"
+        },
+        {
+            "id": "4",
+            "week": "week: 4",
+            "title": "Ignore the Noise",
+            "body": "One thing that I new coming in here was that my classmates would come with varying levels of experience and knowledge.  One thing that I have found difficult to ignore is when questions are asked during classroom live coding... I have no questions to ask, yet, it seems, that many others in the class have PLENTY to say and question.  I still firmly believe that not everyone is built that way, myself in particular, and that I would rather come up with questions and answers as I work on projects and excersized myself.  Not complaining, just acknowledging!"
+        },
+        {
+            "id": "5",
+            "week": "week: 5",
+            "title": "Looking Ahead",
+            "body": "After spending much of the day learning about levels of scope in JS, Steve decided that it was time to show us where we were on our journey at NSS with a map drawing. It looks like we're going to be in for a rough ride: <img src='../imgs/blog_post_map.jpg'>"
+        },
+        {
+            "id": "6",
+            "week": "week: 6",
+            "title": "Bleepin' Heap-Scope",
+            "body": "It took 4 days (including the weekend) for me to stare at, read, reread, talk about, and eventually ask for a guided walk-through of the Heap-Scope excercise. It was the first time that I've felt completely defeated all the way through an excercise. I finally got it working after a 4 hour session with Chris Miller, who's incredible at this stuff, but I'm really hoping that everything that flowed through my brain stuck, or at least some of it..."
+        },
+        {
+            "id": "7",
+            "week": "week: 7",
+            "title": "I still don't know what I don't know.",
+            "body": "Although most everything isn't quite as intimidating to stare at, I'm feeling like there is more and more that I don't know than what I do... If that makes any sense. When asked, 'any questions?', it's hard to even formulate a question, because there's nothing to base one off of... Very frustrating."
+        },
+        {
+            "id": "8",
+            "week": "week: 8",
+            "title": "Clearing blog post field",
+            "body": "Greg mentioned that there was a way to clear the blog post entry field once the 'save' button was clicked to add it to the Blogs page. I've added the code he mentioned should make this work, and I'm testing it now. I'll let you know how it goes in my next post!"
+        }
+    ],
+
+    "contactInfo": [
+        {
+            "type": "email",
+            "name": "mmcpher2@gmail.com"
+        },
+        {
+            "type": "phone number",
+            "name": "615-714-9489"
+        },
+        {
+            "type": "linkedIn",
+            "name": "https://www.linkedin.com/in/ryan-mcpherson-6b636549/"
+        },
+        {
+            "type": "facebook",
+            "name": "https://www.facebook.com/ryan.mcpherson.142"
+        }
+    ],
+
+    "projects": [
+        {
+            "title": "Ryan McPherson's Personal Webesite Project",
+            "link": "https://github.com/mmcpher2/mmcpher2.github.io"
+        },
+        {
+            "title": "Overly Excited Project",
+            "link": "https://github.com/mmcpher2/overlyexcited"
+        },
+        {
+            "title": "Home Inventory Project",
+            "link": "https://github.com/mmcpher2/homeInventory"
+        },
+        {
+            "title": "CSS-Selectors",
+            "link": "https://github.com/mmcpher2/css-selectors"
+        }
+    ],
+
+    "jobs": [
+        {
+            "title": "Clinical Advisor",
+            "company": "HealthStream",
+            "datesemployed": "Feb 2017 – Present",
+            "location": "Greater Nashville Area, TN",
+            "description": ""
+        },
+        {
+            "title": "Specialty Clinical Courseware Solution Manager",
+            "company": "HealthStream",
+            "datesemployed": "Jul 2015 - Feb 2017",
+            "location": "Greater Nashville Area, TN",
+            "description": "The Specialty Clinical Courseware Solution Manger is responsible for delivering solution sales, accelerating adoption through insight and expertise, and evangelizing the value proposition of assigned products to HealthStream clients and prospects. In this role, the Solution Manager seeks to align clinical courseware solutions with clinical and business objectives, build relationships and credibility with key stakeholders effectively, and meet or exceed an assigned sales quota for clinical courseware solutions. This position is ultimately responsibility for all elements of the sales process, including prospecting, qualifying, positioning, demonstrations, presentations, objection handling, and contract negotiations through sale closure."
+        },
+        {
+            "title": "Solution Representative",
+            "company": "HealthStream",
+            "datesemployed": "May 2014 – Jul 2015",
+            "location": "Greater Nashville Area, TN",
+            "description": "Our team focuses on qualifying and generating sales-ready leads for all sales teams across the HealthStream sales structure. We do this by responding to leads that have been developed by the Marketing team through our website, through webinars and white papers, and conducting outbound cold-calling campaigns. We also have 2 solutions that we are currently responsible for selling. The first solution is the Neonatal Resuscitation Program. As the sole provider of the Neonatal Resuscitation Program (NRP) and a partner with the American Academy of Pediatrics (AAP), we are responsible for selling and educating new and existing customers on all aspects of the program. The second solution is the Ambulatory Surgery Center Association (ASCA) Regulatory Library, in which we are responsible for selling to all facility looking to purchase for under 50 users."
+        },
+        {
+            "title": "Advertising Sales Manager",
+            "company": "The Daily Beacon",
+            "datesemployed": "Dec 2013 – May 2014",
+            "location": "Knoxville, TN",
+            "description": ""
+        },
+        {
+            "title": "Sales Representative",
+            "company": "The Daily Beacon",
+            "datesemployed": "May 2013 – May 2014",
+            "location": "Knoxville, TN",
+            "description": ""
+        }
+    ]
+}
