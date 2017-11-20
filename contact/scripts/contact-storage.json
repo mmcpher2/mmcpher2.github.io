@@ -1,0 +1,20 @@
+{
+    "contactInfo": [
+        {
+            "type": "email",
+            "name": "mmcpher2@gmail.com"
+        },
+        {
+            "type": "phone number",
+            "name": "615-714-9489"
+        },
+        {
+            "type": "linkedIn",
+            "name": "https://www.linkedin.com/in/ryan-mcpherson-6b636549/"
+        },
+        {
+            "type": "facebook",
+            "name": "https://www.facebook.com/ryan.mcpherson.142"
+        }
+    ]
+}
