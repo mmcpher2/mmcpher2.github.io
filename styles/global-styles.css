@@ -4,13 +4,17 @@
     display: none;
 }
 
+.container {
+    height: 100%;
+}
+
 /* Body Background
 html,
 body {
    margin:0;
    padding:0;
    height:100%;
-   background-color: hsl(115, 100%, 96%);   
+   background-color: hsl(115, 100%, 96%);
 } */
 
 /* Content Between Header and Footer */
@@ -22,7 +26,7 @@ body {
 /* Header for all pages */
 /* #header {
    background: rgba(76, 175, 80, 0.3);
-   box-shadow: 0 8px 6px -6px black;   
+   box-shadow: 0 8px 6px -6px black;
    padding:10px;
 } */
 
@@ -45,7 +49,7 @@ body {
 }
 
 h2,
-h3, 
+h3,
 ul,
 ol {
     color: darkblue;

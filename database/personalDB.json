@@ -1,5 +1,5 @@
 
-{    "home": 
+{    "home":
     {
         "title": "Home",
         "content":
@@ -8,7 +8,14 @@
                 "information": "Over the past 4 years, I have been working in software sales for a company located in Nashille, TN called HealthStream.  While working there, I realized that my interest in software moved beyond just selling the appications, and I determined it was time to make a pivot and learn the development side of software.  Part of my interest in development was also stirred up by my more artistic, creative side.  I have always wanted to do something that will allow me to utilize both my creative side, needing to create things, and my business/sales experience."
             }
     },
-    "blogs": 
+    "admin": {
+        "title": "Admin",
+        "content": {
+                "username": "mmcpher2",
+                "password": "Password1"
+        }
+    },
+    "blogs":
     {
         "title": "Blogs",
         "content":[
@@ -62,7 +69,7 @@
             }
         ]
     },
-    "contact": 
+    "contact":
     {   "title": "Contact",
         "content":
             {
@@ -72,7 +79,7 @@
                 "facebook": "https://www.facebook.com/ryan.mcpherson.142"
             }
     },
-    "projects": 
+    "projects":
     {   "title": "Projects",
         "content":[
             {
@@ -93,7 +100,7 @@
             }
         ]
     },
-    "jobs": 
+    "jobs":
     {   "title": "Jobs",
         "content":[
             {

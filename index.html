@@ -2,40 +2,52 @@
 <html>
     <head>
         <title>Ryan McPherson's Personal Site</title>
-        <link href="styles/global-styles.css" rel="stylesheet">
+        <link href="./styles/global-styles.css" rel="stylesheet">
+        <link href="./styles/navBar.css" rel="stylesheet">
     </head>
 
     <body>
-        <nav id="navigation">
-            <ul id="navList"></ul>
-        </nav>
-        
-        <section id="home" class="mainPage">
-            <header>
-                <h2>Welcome to Ryan McPherson's Personal Site</h2>
-            </header>
-            <section id="my_story"></section>
-        </section>
+        <div class="container">
+            <nav id="navigation">
+                <ul id="navList"></ul>
+            </nav>
 
-        <section id="blog" class="mainPage">
-            <h2>It's Blog Time!</h2>
-        </section>
+            <section id="home" class="mainPage">
+                <header>
+                    <h2>Welcome to Ryan McPherson's Personal Site</h2>
+                </header>
+                <div id="my_story"></div>
+            </section>
 
-        <section id="projects" class="mainPage hidden">
-        </section>
+            <section id="blogs" class="mainPage hidden">
+                <h2>It's Blog Time!</h2>
+                Search Blogs: <input type="text" id="blogFilter"></input>
 
-        <section id="resume" class="mainPage hidden">
-        </section>
+                <div class="blogBox" id="myBlogs">
+                    <article id="blogDisplayer">
+                    </article>
+                </div>
 
-        <section id="contact" class="mainPage">
-        </section>
+                <div id="blogPaginator">
+                </div>
+            </section>
 
-        <section id="admin" class="mainPage hidden">
-        </section>
-        
-        <footer>Written by <a href="mailto:mmcpher2@gmail.com">Ryan McPherson</a><br> 2709 Linmar Ave.  Nashville, TN.  37215   USA</footer>
+            <section id="projects" class="mainPage hidden">
+            </section>
+
+            <section id="jobs" class="mainPage hidden">
+            </section>
+
+            <section id="contact" class="mainPage hidden">
+            </section>
+
+            <section id="admin" class="mainPage hidden">
+            </section>
+        </div>
+
+        <footer class="footer">Written by <a href="mailto:mmcpher2@gmail.com">Ryan McPherson</a><br> 2709 Linmar Ave.  Nashville, TN.  37215   USA</footer>
 
         <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-        <script src='./build/bundle.js'></script>        
+        <script src='./build/bundle.js'></script>
     </body>
 </html>

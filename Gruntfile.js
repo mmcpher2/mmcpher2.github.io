@@ -5,7 +5,7 @@ module.exports = function(grunt) {
           watch: {
               scripts: {
                 files: ["scripts/**/*.js", "!node_modules/**?*.js"],
-                tasks: ["eslint", "browserify"],
+                tasks: ["eslint", "browserify", "notify_hooks"],
                 options: {
                   spawn: false,
                 },
@@ -39,6 +39,15 @@ module.exports = function(grunt) {
                 debug: true,
             }
         },
+        notify_hooks: {
+          options: {
+            enabled: true,
+            max_jshint_notifications: 5, // maximum number of notifications from jshint output
+            title: "Project Name", // defaults to the name in package.json, or will use project directory's name 
+            success: false, // whether successful grunt executions should be notified automatically 
+            duration: 3 // the duration of notification in seconds, for `notify-send only 
+          }
+        },
         eslint: {
         src: ["scripts/**.js", "!node_modules/**?*.js"]
       },
@@ -49,6 +58,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("gruntify-eslint");
   grunt.loadNpmTasks("grunt-browserify");
+  grunt.loadNpmTasks("grunt-notify");
+
   // Default task(s).
-  grunt.registerTask("default", ["eslint", "browserify", "watch"]);
+  grunt.registerTask("default", ["eslint", "browserify", "watch", "notify_hooks"]);
 };

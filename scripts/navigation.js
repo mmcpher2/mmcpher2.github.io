@@ -1,6 +1,9 @@
 const home = require("./home-controller")
 const contactInfo = require("./contact-controller")
 const blogs = require("./blog-controller")
+const projects = require("./projects-controller")
+const jobs = require("./resume-controller")
+const pageShow = require("./pageShow")
 
 let navOutputEl = $("#navList")
 module.exports = $(document).ready(function() {
@@ -9,17 +12,17 @@ module.exports = $(document).ready(function() {
         "method": "GET"
     }).then(
         function (entireDB) {
+            console.log(entireDB)
             // NavBar - Grabbing the title on each key for the links on the nav bar.
             Object.keys(entireDB).forEach(function(key) {
-                let navEls = $(`<li><a href="#">${entireDB[key].title}</a></li>`)
+                let navEls = $(`<li class="${key}"><a href="#">${key}</a></li>`)
                 navOutputEl.append(navEls)
             })
-            // home - init homePage to populate homePage info
+            pageShow()
             home.init(entireDB.home)
-            // blog - init blog function to populate blogs
             blogs.init(entireDB.blogs)
-            // contactInfo - init contact function to populate contact info
             contactInfo.init(entireDB.contact)
-
+            projects.init(entireDB.projects)
+            jobs.init(entireDB.jobs)
         })
     })
