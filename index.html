@@ -1,51 +1,41 @@
 
-
 <html>
-
     <head>
         <title>Ryan McPherson's Personal Site</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <link href="styles/global-styles.css" rel="stylesheet">
     </head>
 
     <body>
-        <div id="container">
-            <div id="header">
-                <div class="topnav" id="myTopnav">
-                    <a href="../index.html">Home</a>
-                    <div class="navOptions">
-                        <a href="/contact/index.html">Contact</a>
-                        <a href="/projects/index.html">Projects</a>
-                        <a href="/blog/index.html">Blog</a>
-                        <a href="/resume/index.html">Resume</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-                    </div>        
-                </div>
-            </div>
+        <nav id="navigation">
+            <ul id="navList"></ul>
+        </nav>
+        
+        <section id="home" class="mainPage">
+            <header>
+                <h2>Welcome to Ryan McPherson's Personal Site</h2>
+            </header>
+            <section id="my_story"></section>
+        </section>
 
-            <div id="body">
-                <article id="intro" class="article">
-                   Welcome to Ryan McPherson's Personal Site
-                </article><br>
+        <section id="blog" class="mainPage hidden">
+            <h2>It's Blog Time!</h2>
+        </section>
 
-                <article id="history" class="article">
-                    <strong>My Story:</strong> Over the past 4 years, I have been working in software sales for a company located in Nashille, TN called HealthStream.  While working there, I realized that my interest in software moved beyond just selling the appications, and I determined it was time to make a pivot and learn the development side of software.  Part of my interest in development was also stirred up by my more artistic, creative side.  I have always wanted to do something that will allow me to utilize both my creative side, needing to create things, and my business/sales experience.
-                </article>
+        <section id="projects" class="mainPage hidden">
+        </section>
 
-                <img src="">
+        <section id="resume" class="mainPage hidden">
+        </section>
 
-            </div>
+        <section id="contact" class="mainPage">
+        </section>
 
-            <div id="footer">
-                <footer>
-                    <div class="footerNav">
-                        <address class="address">
-                                Written by <a href="mailto:mmcpher2@gmail.com">Ryan McPherson</a><br> 2709 Linmar Ave.  Nashville, TN.  37215   USA
-                        </address>
-                    </div>
-                </footer>
-            </div>
-        </div>
+        <section id="admin" class="mainPage hidden">
+        </section>
+        
+        <footer>Written by <a href="mailto:mmcpher2@gmail.com">Ryan McPherson</a><br> 2709 Linmar Ave.  Nashville, TN.  37215   USA</footer>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <script src='./build/bundle.js'></script>        
     </body>
 </html>
