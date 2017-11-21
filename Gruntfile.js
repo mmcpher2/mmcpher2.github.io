@@ -40,7 +40,7 @@ module.exports = function(grunt) {
             }
         },
         eslint: {
-        src: ["scripts/**/*.js", "!node_modules/**?*.js"]
+        src: ["scripts/**.js", "!node_modules/**?*.js"]
       },
     }
   );
